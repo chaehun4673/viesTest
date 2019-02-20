@@ -1,0 +1,101 @@
+/*body에 기본적으로 margin이 잡혀있는것을 초기화*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+
+.header-area {
+    width:  100%;
+    height: 4rem;
+    background: rgba(45,45,45,0.98);
+}
+.top-menu{
+    float: left;
+ 
+}
+.top-menu li{
+    display: inline-block;
+    margin-right: 20px;
+   
+}
+
+.top-menu li a {
+    color: white;
+}
+
+.contents-area {
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+
+.aside-area {
+    width: 30%;
+    height: 100%;
+}
+
+.section-area {
+    width: 70%;
+    height: 100%;
+}
+
+.footer-area {
+    width:  100%;
+    height: 2rem;
+    /* border: 2px solid red; */
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex:   33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial{
+    background: #fff;
+    padding: 5px;
+}
+
+.testimonial img{
+    width: 350px;
+    height: 186px;
+    /* border-radius: 50%; */
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+    flex: 100%;
+    max-width: 80%;;
+}
+}
+
+@media screen and (max-width:600px) {
+    .col{
+        flex: 100%;
+        max-width: 80%;;
+    }
+}
